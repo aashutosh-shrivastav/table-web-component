@@ -3,13 +3,13 @@
   <table id  = "datatable">
     <thead>
       <tr>
-        <th *ngFor = "let key of ColData">{{key.header}}</th>
+        <th >Header</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor = "let record of GridData">
-        <td *ngFor = "let key of ColData">
-          <span> {{ record[key.feild] }} </span>
+      <tr >
+        <td >
+          <span> cell </span>
         </td>
       </tr>
     </tbody>
