@@ -1,0 +1,17 @@
+
+<div>
+  <table id  = "datatable">
+    <thead>
+      <tr>
+        <th *ngFor = "let key of ColData">{{key.header}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let record of GridData">
+        <td *ngFor = "let key of ColData">
+          <span> {{ record[key.feild] }} </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
