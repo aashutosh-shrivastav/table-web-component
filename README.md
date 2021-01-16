@@ -1,4 +1,10 @@
-# WebComponent
+# Table WebComponent using Angular 
+
+In the terminal input command:" ng build --prod --output-hashing none "
+
+To compile dist folder with webcomponent subfolder which shows a build files for table webcomponent.
+ 
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.7.
 

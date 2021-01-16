@@ -2,9 +2,12 @@
   "name": "web-component",
   "version": "0.0.0",
   "scripts": {
+    "build": "ng build --prod --output-hashing=none",
+    "package": "cat dist/web-component/{runtime,polyfills,scripts,main}.js | gzip > elements.js.gz",
+    "serve": "http-server --gzip",
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
