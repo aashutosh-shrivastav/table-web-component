@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, Injector} from '@angular/core';
+import { NgModule, Injector,CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 
 //import { AppRoutingModule } from './app-routing.module';
 //import { AppComponent } from './app.component';
@@ -16,7 +16,8 @@ import  { createCustomElement } from '@angular/elements';
 
   ],
   providers: [],
-  entryComponents: [TableCompComponent]
+  entryComponents: [TableCompComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA ] 
 })
 export class AppModule {
     constructor(
@@ -27,6 +28,6 @@ export class AppModule {
 
   ngDoBootstrap(){
     const component = createCustomElement(TableCompComponent, {injector: this.injector});
-    customElements.define('app-table-comp', component);
+    customElements.define('ce-table', component);
   }
  }
